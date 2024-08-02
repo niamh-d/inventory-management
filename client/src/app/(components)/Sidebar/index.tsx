@@ -81,14 +81,21 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        logo
+        <Image
+          src="https://s3-inventorymanagement.s3.us-east-2.amazonaws.com/logo.png"
+          alt="stockapp-logo"
+          width={27}
+          height={27}
+          className="rounded w-8"
+        />
         <h1
           className={`${
             isSidebarCollapsed ? "hidden" : "block"
-          } font-extrabold text-2xl`}
+          } font-extrabold text-2xl uppercase`}
         >
-          STOCKAPP
+          stockapp
         </h1>
+
         <button
           className="md:hidden px-3 py-3 bg-gray-100 rounded-full hover:bg-blue-100"
           onClick={toggleSidebar}
